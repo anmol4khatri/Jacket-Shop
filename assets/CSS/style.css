@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: #ededed;
+}
+#nav {
+  /* background-color: aqua; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 30px 30px;
+}
+#nav h4 {
+  font-size: 20px;
+}
+#bag {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+}
+#center {
+  width: 100%;
+  /* background-color: aquamarine; */
+  padding: 40px 80px;
+}
+#center h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+#center-in {
+  /* background-color: bisque; */
+  width: 100%;
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+#center-in p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+#right {
+  width: 20%;
+}
+.elem {
+  border-top: 3px solid black;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.elem a {
+  text-decoration: none;
+  font-weight: 550;
+  color: black;
+  font-size: 20px;
+  margin: 5px;
+  line-height: 30px;
+}
+.elem i {
+  font-size: 27px;
+  opacity: 0;
+}
+.elem:hover i {
+  opacity: 1;
+}
+#bottom img{
+  width: 100%;
+  
+}
+#bottom {
+  position: relative;
+  width: 100%;
+}
+#bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(to bottom, #ededed, transparent);
+}
+#bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(to top, #ededed, transparent);
+}
+#bottom img {
+  width: 100%;
+  display: block;
+}
